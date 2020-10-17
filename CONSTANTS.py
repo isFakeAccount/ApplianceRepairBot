@@ -7,5 +7,5 @@ ABANDONED_ID = ''
 FOLLOW_UP_COMMENT = 'This is a follow up comment.'
 
 # Days Limit for follow-up and abandoned submission
-FOLLOW_UP_DAYS_LIMIT = 3
-ABANDONED_DAYS_LIMIT = 7
+FOLLOW_UP_DAYS_LIMIT = 7
+ABANDONED_DAYS_LIMIT = 15

@@ -45,6 +45,9 @@ def follow_up_old_submissions():
             # If age just crossed the follow up limits. Sends a follow up comment
             elif submission_age >= (CONSTANTS.FOLLOW_UP_DAYS_LIMIT * 86400):
                 reply(saved, CONSTANTS.FOLLOW_UP_COMMENT)
+        # Unsave the submissions that are already Solved
+        elif saved.link_flair_text != 'Solved':
+            saved.unsave()
 
 
 schedule.every(1).days.do(follow_up_old_submissions())
